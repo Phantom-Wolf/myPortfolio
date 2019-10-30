@@ -7,15 +7,13 @@
 html,
 body{
     height: 100%;
-    /* font-family: 'Montserrat', sans-serif; */
-
 }
-
-/* ***** header ***** */
 
 body{
     background-color: rgb(238,238,238);
 }
+
+/* ***** header ***** */
 
 .hero{
     margin: 0 auto;
@@ -57,7 +55,6 @@ body{
     justify-content: center;
     width: 10%;
     border-right: 2px solid rgb(170,170,170);
-    /* margin: 20px 0; */
 }
 
 li{
@@ -89,17 +86,14 @@ a:hover{
     display: flex;
     flex-direction: column;
     text-align: center;
-    
 }
 
 .main-body::-webkit-scrollbar { width: 0 !important }
 
 .main-child{
     padding: 5px 15% 50px;
-    /* min-height: 600px; */
     max-width: 100%;
     color: black; 
-    /* border: 1px solid red; */
 }
 
 .main-child h2{
@@ -117,7 +111,6 @@ a:hover{
 /* ***** about me section ***** */
 
 #bio{
-    
     margin-top: 50px;
 }
 
@@ -130,12 +123,12 @@ a:hover{
 #skills{
     background-color: white;
 }
+
 .image-container{
     max-width: 90%;
     height: 80%;
     margin: 10px auto 0;
     border-radius: 3px;
-
 }
 
 .skill-img{
@@ -153,6 +146,7 @@ a:hover{
     margin: auto;
     padding: 20px 0;
 }
+
 .my-projects h3{
     font-family: 'Montserrat', sans-serif;
 }
@@ -178,24 +172,19 @@ a:hover{
     margin: 0 15px;
 }
 
-
 /* ***** footer ***** */
 
 footer{
     color:rgb(65,141,220);
-    /* background-color: rgb(129, 129, 129); */
     height: 25px;
     width: 95%;
     margin: 10px auto 20px;
     border-radius: 5px 5px 0 0;
-
 }
-
 
 /* ***** media query ***** */
 
 @media screen and (max-width: 1300px){
-
 
 /* ***** header mq ***** */
 
@@ -248,7 +237,6 @@ li{
 /* ***** about me section mq ***** */
 
 #bio{
-    
     margin-top: 0px;
 }
 
@@ -257,7 +245,6 @@ li{
 .project-image{
     float: none;
 }
-
 
 }
 
