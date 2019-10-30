@@ -1,0 +1,275 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body{
+    height: 100%;
+    /* font-family: 'Montserrat', sans-serif; */
+
+}
+
+/* ***** header ***** */
+
+body{
+    background-color: rgb(238,238,238);
+}
+
+.hero{
+    margin: 0 auto;
+    height: 20%;
+    background-image: url(http://aikon-academy.com/wp-content/uploads/iStock-870571300.jpg);
+    background-size: cover;
+    filter: grayscale(100%);
+    background-color: rgb(107, 107, 107);
+    width: 100%;
+    position: relative;
+    -webkit-box-shadow: 0 8px 6px -6px black;
+	-moz-box-shadow: 0 8px 6px -6px black;
+    box-shadow: 0 8px 6px -6px black;
+}
+
+.name{
+    position: absolute;
+    color: black;
+    bottom: -23%;
+    left: 14%;
+    font-size: 80px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* ***** main global ***** */
+
+.contents{
+    display: flex;
+    width: 100%;
+    height: 80%;
+}
+
+/* ***** navigation ***** */
+
+
+.navigation{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 10%;
+    border-right: 2px solid rgb(170,170,170);
+    /* margin: 20px 0; */
+}
+
+li{
+    text-align: center;
+    margin: 20px 0;
+}
+
+a{
+    padding: 5px;
+    text-decoration: none;
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+}
+
+a:hover{
+    background-color: rgb(122, 122, 122);
+    color: white;
+    border-radius: 3px;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+/* ***** main body ***** */
+
+.main-body{
+    overflow: auto;
+    scroll-behavior: smooth;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    
+}
+
+.main-body::-webkit-scrollbar { width: 0 !important }
+
+.main-child{
+    padding: 5px 15% 50px;
+    /* min-height: 600px; */
+    max-width: 100%;
+    color: black; 
+    /* border: 1px solid red; */
+}
+
+.main-child h2{
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
+
+#bio,
+#contact{
+    background-color: rgb(122, 122, 122);
+    color: white;
+}
+
+/* ***** about me section ***** */
+
+#bio{
+    
+    margin-top: 50px;
+}
+
+#bio p{
+    font-family: 'Archivo Narrow', sans-serif;
+}
+
+/* ***** skills section ***** */
+
+#skills{
+    background-color: white;
+}
+.image-container{
+    max-width: 90%;
+    height: 80%;
+    margin: 10px auto 0;
+    border-radius: 3px;
+
+}
+
+.skill-img{
+    margin: 10px 15px 0;
+}
+
+/* ***** projects section ***** */
+
+#projects{
+    padding: 5px 0;
+}
+
+.my-projects{
+    width: 80%;
+    margin: auto;
+    padding: 20px 0;
+}
+.my-projects h3{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.project-image{
+    float: left;
+    max-width: 100%;
+    height: auto;
+    width: auto\9;
+    border-radius: 3px
+}
+
+.my-projects p,
+.my-projects h3{
+    margin: 15px;
+}
+
+/* ***** contacts section ***** */
+
+.contact-item{
+    list-style: none;
+    display: inline-block;
+    margin: 0 15px;
+}
+
+
+/* ***** footer ***** */
+
+footer{
+    color:rgb(65,141,220);
+    /* background-color: rgb(129, 129, 129); */
+    height: 25px;
+    width: 95%;
+    margin: 10px auto 20px;
+    border-radius: 5px 5px 0 0;
+
+}
+
+
+/* ***** media query ***** */
+
+@media screen and (max-width: 1300px){
+
+
+/* ***** header mq ***** */
+
+.hero{
+    display:flex;
+}
+
+.name{
+    position: static;
+    margin:  auto;
+    font-size: 60px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* ***** main global mq ***** */
+
+.contents{
+    flex-direction: column;
+}
+
+/* ***** navigation mq ***** */
+
+.navigation{
+    display: static;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    border-bottom: 2px solid rgb(170,170,170);
+    border-right:0;
+    margin: 20px 0 0 0;
+}
+
+li{
+    list-style: none;
+    display: inline-block;
+    padding: 0 10px 10px 10px;
+    margin: 0;
+}
+
+/* ***** main body mq ***** */
+
+.main-body{
+    width:100%;
+}
+
+.main-child{
+    padding: 0 15% 50px;
+}
+
+/* ***** about me section mq ***** */
+
+#bio{
+    
+    margin-top: 0px;
+}
+
+/* ***** projects section mq ***** */
+
+.project-image{
+    float: none;
+}
+
+
+}
+
+/* ***** media query ***** */
+
+@media screen and (max-width: 800px){
+
+/* ***** navigation mq ***** */
+
+li{
+    padding: 0 3px 10px 3px;
+}
+
+
+}
