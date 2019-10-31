@@ -1,3 +1,5 @@
+/* ***** global ***** */
+
 *{
     box-sizing: border-box;
     margin: 0;
@@ -13,6 +15,12 @@ body{
     background-color: rgb(238,238,238);
 }
 
+p{
+    font-family: Calibri,Candara,Segoe,Segoe UI,Optima,Arial,sans-serif; 
+    font-size: 18px;
+    line-height: 26px;
+}
+
 /* ***** header ***** */
 
 .hero{
@@ -23,19 +31,19 @@ body{
     filter: grayscale(100%);
     background-color: rgb(107, 107, 107);
     width: 100%;
-    position: relative;
+    display: flex;
     -webkit-box-shadow: 0 8px 6px -6px black;
 	-moz-box-shadow: 0 8px 6px -6px black;
     box-shadow: 0 8px 6px -6px black;
+    justify-content: flex-end;
 }
 
 .name{
-    position: absolute;
-    color: black;
-    bottom: -23%;
-    left: 14%;
+    margin-right: 5%;
+    align-self: center;
     font-size: 80px;
     font-family: 'Montserrat', sans-serif;
+    color: rgb(91, 99, 58);
 }
 
 /* ***** main global ***** */
@@ -47,7 +55,6 @@ body{
 }
 
 /* ***** navigation ***** */
-
 
 .navigation{
     display: flex;
@@ -69,8 +76,8 @@ a{
     font-family: 'Montserrat', sans-serif;
 }
 
-a:hover{
-    background-color: rgb(122, 122, 122);
+.nav a:hover{
+    background-color: rgb(146, 151, 126);
     color: white;
     border-radius: 3px;
     transition: 0.3s ease;
@@ -114,8 +121,10 @@ a:hover{
     margin-top: 50px;
 }
 
-#bio p{
-    font-family: 'Archivo Narrow', sans-serif;
+.profile-pic{
+    border-radius: 3px;
+    border: 2px solid rgb(238,238,238);
+    margin-top: 20px;
 }
 
 /* ***** skills section ***** */
@@ -164,6 +173,15 @@ a:hover{
     margin: 15px;
 }
 
+.my-projects a:hover{
+    background-color: rgb(146, 151, 126);
+    color: white;
+    border-radius: 3px;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+
 /* ***** contacts section ***** */
 
 .contact-item{
@@ -172,15 +190,39 @@ a:hover{
     margin: 0 15px;
 }
 
+.contacts .fas,
+.contacts .fab{
+    color: white;
+    
+}
+
+.contacts .fas:hover,
+.contacts .fab:hover{
+    color: rgb(146, 151, 126);
+    transition: 0.2s ease;
+    cursor: pointer;
+}
+
+.project-links{
+    font-family: Calibri,Candara,Segoe,Segoe UI,Optima,Arial,sans-serif; 
+    font-size: 18px;
+}
+
 /* ***** footer ***** */
 
 footer{
-    color:rgb(65,141,220);
+    color:rgb(146, 151, 126);
     height: 25px;
     width: 95%;
     margin: 10px auto 20px;
     border-radius: 5px 5px 0 0;
 }
+
+footer p{
+    font-weight: 700;
+}
+
+
 
 /* ***** media query ***** */
 
@@ -188,12 +230,8 @@ footer{
 
 /* ***** header mq ***** */
 
-.hero{
-    display:flex;
-}
 
 .name{
-    position: static;
     margin:  auto;
     font-size: 60px;
     font-family: 'Montserrat', sans-serif;
