@@ -43,7 +43,15 @@ p{
     align-self: center;
     font-size: 80px;
     font-family: 'Montserrat', sans-serif;
-    color: rgb(91, 99, 58);
+    /* color: white; */
+    /* mix-blend-mode: difference; */
+    background-color:black;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-shadow: rgba(68, 68, 68, 0.5) 0px 3px 3px;
+    
 }
 
 /* ***** main global ***** */
