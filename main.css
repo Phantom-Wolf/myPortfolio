@@ -80,7 +80,7 @@ li{
 a{
     padding: 5px;
     text-decoration: none;
-    color: black;
+    color: rgb(29, 29, 29);
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -127,12 +127,18 @@ a{
 
 #bio{
     margin-top: 50px;
+    padding: 5px 21% 50px;
+}
+
+#bio p {
+    text-align: left;
 }
 
 .profile-pic{
     border-radius: 3px;
     border: 2px solid rgb(238,238,238);
-    margin-top: 20px;
+    margin-right: 60px;
+    float: left;
 }
 
 /* ***** skills section ***** */
@@ -284,6 +290,17 @@ li{
 
 #bio{
     margin-top: 0px;
+    padding: 5px 15% 50px;
+}
+
+#bio p {
+    text-align: center;
+}
+
+.profile-pic{
+    margin-right: 0;
+    float: none;
+    margin-bottom: 20px;
 }
 
 /* ***** projects section mq ***** */
