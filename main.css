@@ -194,6 +194,10 @@ a{
     cursor: pointer;
 }
 
+.project-links{
+    font-family: Calibri,Candara,Segoe,Segoe UI,Optima,Arial,sans-serif; 
+    font-size: 18px;
+}
 
 /* ***** contacts section ***** */
 
@@ -203,10 +207,15 @@ a{
     margin: 0 15px;
 }
 
+.contacts p{
+    font-family: Calibri,Candara,Segoe,Segoe UI,Optima,Arial,sans-serif; 
+    font-size: 18px;
+    color: white;
+}
+
 .contacts .fas,
 .contacts .fab{
     color: white;
-    
 }
 
 .contacts .fas:hover,
@@ -214,11 +223,6 @@ a{
     color: rgb(146, 151, 126);
     transition: 0.2s ease;
     cursor: pointer;
-}
-
-.project-links{
-    font-family: Calibri,Candara,Segoe,Segoe UI,Optima,Arial,sans-serif; 
-    font-size: 18px;
 }
 
 /* ***** footer ***** */
@@ -234,8 +238,6 @@ footer{
 footer p{
     font-weight: 700;
 }
-
-
 
 /* ***** media query ***** */
 
