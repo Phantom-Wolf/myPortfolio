@@ -222,8 +222,8 @@ a{
     color: white;
 }
 
-.contacts button:hover > .fab,
-.contacts button:hover > .fas,
+.contacts button:hover .fas ,
+.contacts button:hover .fab,
 .contacts button:hover{
     color: rgb(146, 151, 126);
     transition: 0.2s ease;
