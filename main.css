@@ -340,6 +340,19 @@ li{
 
 @media screen and (max-width: 800px){
 
+/* ***** header mq ***** */
+
+.hero{
+    height: 10%;
+}
+
+/* ***** main global mq ***** */
+
+.contents{
+    height: 90%;
+}
+
+
 /* ***** navigation mq ***** */
 
 li{
@@ -359,7 +372,7 @@ li{
         font-size: 12px;
     }
     
-    /* ***** navigation mq ***** */
+    /* ***** contacts mq ***** */
 
     .contacts li{
         width: 60px;
