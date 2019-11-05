@@ -222,9 +222,9 @@ a{
     color: white;
 }
 
-.contacts button:hover .fas ,
-.contacts button:hover .fab,
-.contacts button:hover{
+.contacts li:hover .fas ,
+.contacts li:hover .fab,
+.contacts li:hover{
     color: rgb(146, 151, 126);
     transition: 0.2s ease;
     cursor: pointer;
@@ -232,6 +232,14 @@ a{
 }
 
 button{
+    border: none;
+    border-radius: 3px;
+    width: 90px;
+    padding: 3px;
+    background-color: rgb(168, 168, 168);
+}
+
+.contacts li{
     border: none;
     border-radius: 3px;
     width: 90px;
