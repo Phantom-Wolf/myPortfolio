@@ -201,6 +201,10 @@ a{
 
 /* ***** contacts section ***** */
 
+#contact{
+    padding: 5px 5% 50px;
+}
+
 .contact-item{
     list-style: none;
     display: inline-block;
