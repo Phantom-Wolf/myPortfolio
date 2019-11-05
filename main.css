@@ -361,7 +361,7 @@ li{
     
     /* ***** navigation mq ***** */
 
-    button{
+    .contacts li{
         width: 60px;
     }
     }
