@@ -25,7 +25,7 @@ p{
 
 .hero{
     margin: 0 auto;
-    height: 15%;
+    height: auto;
     background-image: url(http://aikon-academy.com/wp-content/uploads/iStock-870571300.jpg);
     background-size: cover;
     filter: grayscale(100%);
