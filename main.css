@@ -5,7 +5,7 @@
     padding: 0;
     border: 0;
     font-size: 100%;
-    /*The box-sizing property is used to tell the browser what the sizing properties (width and height) should include border-box.*/
+    /*The box-sizing property */
     box-sizing: border-box;
     /*reset Chrome user agent styles*/
     -webkit-margin-before: 0px;
@@ -45,7 +45,10 @@
     -o-padding-end: 0px;
 }
 
-*****************************************************
+/* ************************************************** */
+
+/* ***** global ***** */
+
 html,
 body{
     height: 100vh;
