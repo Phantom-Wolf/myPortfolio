@@ -64,13 +64,12 @@ p{
 /* ***** header ***** */
 
 .hero{
-    margin: 0 auto;
     height: 15vh;
     background-image: url(http://aikon-academy.com/wp-content/uploads/iStock-870571300.jpg);
     background-size: cover;
     filter: grayscale(100%);
     background-color: rgb(107, 107, 107);
-    width: 100%;
+    width: 100vw;
     display: flex;
     -webkit-box-shadow: 0 8px 6px -6px black;
 	-moz-box-shadow: 0 8px 6px -6px black;
