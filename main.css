@@ -99,7 +99,7 @@ p{
 
 .contents{
     display: flex;
-    width: 100%;
+    width: 100vw;
     height: 85vh;
 }
 
@@ -109,7 +109,7 @@ p{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 10%;
+    width: 10vw;
     border-right: 2px solid rgb(170,170,170);
 }
 
@@ -138,7 +138,7 @@ a{
 .main-body{
     overflow: auto;
     scroll-behavior: smooth;
-    width: 90%;
+    width: 90vw;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -309,7 +309,6 @@ footer p{
 
 /* ***** header mq ***** */
 
-
 .name{
     margin:  auto;
     font-size: 60px;
@@ -328,11 +327,11 @@ footer p{
     display: static;
     flex-direction: row;
     justify-content: center;
-    width: 100%;
+    width: 100vw;
     border-bottom: 2px solid rgb(170,170,170);
     border-right:0;
     margin: 15px 0 0 0;
-    height: 35px;
+    height: 5vh;
 }
 
 li{
@@ -345,7 +344,8 @@ li{
 /* ***** main body mq ***** */
 
 .main-body{
-    width:100%;
+    width: 100vw;
+    height: 95vh;
 }
 
 .main-child{
