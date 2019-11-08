@@ -67,7 +67,7 @@ p{
 /* ***** header ***** */
 
 .hero{
-    height: 15vh;
+    height: auto;
     background-image: url(http://aikon-academy.com/wp-content/uploads/iStock-870571300.jpg);
     background-size: cover;
     filter: grayscale(100%);
@@ -333,7 +333,7 @@ footer p{
     border-bottom: 2px solid rgb(170,170,170);
     border-right:0;
     margin: 15px 0 0 0;
-    height: 5vh;
+    height: auto;
 }
 
 li{
