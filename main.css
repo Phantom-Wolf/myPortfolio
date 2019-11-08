@@ -386,7 +386,7 @@ li{
 /* ***** header mq ***** */
 
 .hero{
-    height: 10vh;
+    height: auto;
 }
 
 /* ***** main global mq ***** */
