@@ -178,7 +178,7 @@ h2 i {
 }
 
 #bio p {
-    text-align: left;
+    text-align: center;
 }
 
 .profile-pic{
@@ -320,6 +320,10 @@ footer {
 
     .navigation{
         display: flex;
+    }
+
+    #bio p {
+        text-align: left;
     }
 
     .profile-pic{
