@@ -184,9 +184,11 @@ h2 i {
 .profile-pic{
     border-radius: 3px;
     border: 2px solid rgb(238,238,238);
-    margin-right: 60px;
-    float: left;
+    margin: 0px 0px 10px 32px;
+    float: none;
 }
+
+
 
 /* ***** skills section ***** */
 
@@ -318,6 +320,13 @@ footer {
 
     .navigation{
         display: flex;
+    }
+
+    .profile-pic{
+        border-radius: 3px;
+        border: 2px solid rgb(238,238,238);
+        margin: 0px 60px 0px 0px;
+        float: left;
     }
 
 }
