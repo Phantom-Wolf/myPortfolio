@@ -49,75 +49,16 @@
 
 /* ***** global ***** */
 
-html,
-body{
-    height: 100vh;
-}
+
 
 body{
-    background-color: rgb(238,238,238);
+    background-color: rgb(52,51,49);
 }
 
 p{
     font-family: Calibri,Candara,Segoe,Segoe UI,Optima,Arial,sans-serif; 
     font-size: 18px;
     line-height: 26px;
-}
-
-/* ***** header ***** */
-
-.hero{
-    height: auto;
-    background-image: url(http://aikon-academy.com/wp-content/uploads/iStock-870571300.jpg);
-    background-size: cover;
-    filter: grayscale(100%);
-    background-color: rgb(107, 107, 107);
-    width: 100vw;
-    display: flex;
-    -webkit-box-shadow: 0 8px 6px -6px black;
-	-moz-box-shadow: 0 8px 6px -6px black;
-    box-shadow: 0 8px 6px -6px black;
-    justify-content: flex-end;
-}
-
-.name{
-    margin-right: 5%;
-    align-self: center;
-    font-size: 80px;
-    font-family: 'Montserrat', sans-serif;
-    /* color: white; */
-    /* mix-blend-mode: difference; */
-    background-color:black;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    background-clip: text;
-    color: transparent;
-    text-shadow: rgba(68, 68, 68, 0.5) 0px 3px 3px;
-}
-
-
-
-/* ***** main global ***** */
-
-.contents{
-    display: flex;
-    width: 100vw;
-    height: 85vh;
-}
-
-/* ***** navigation ***** */
-
-.navigation{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 10vw;
-    border-right: 2px solid rgb(170,170,170);
-}
-
-li{
-    text-align: center;
-    margin: 20px 0;
 }
 
 a{
@@ -127,49 +68,113 @@ a{
     font-family: 'Montserrat', sans-serif;
 }
 
-.nav a:hover{
-    background-color: rgb(146, 151, 126);
-    color: white;
-    border-radius: 3px;
+/* ***** header ***** */
+
+
+.header-container {
+    background-image: url(images/hero-image-blacksmith2.jpeg);
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center center;
+    background-size: cover;
+    height: 70vh;
+    width: 100%;
+    display: block;
+    margin:0px;
+    postion: relative;
+    border-bottom: 2px solid rgb(58, 58, 58);
+}
+
+.name{
+    color: rgb(253,198,1);
+    font-size: 22px;
+    position: absolute;
+    right: 20px;
+    bottom: 35%;
+    font-family: Montserrat;
+    text-shadow: 0 0 10px rgb(207,51,0);
+    text-align: center;
+}
+
+.contents{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    margin: 0px;
+    padding: 0px;
+    
+}
+
+/* ***** navigation ***** */
+
+.navigation{
+    display: none;
+    flex-direction: row;
+    justify-content: center;
+    align-self: center;
+    width: 100%;
+    height: 30px;
+    position: sticky;
+    top: 0;
+    background-color: rgb(207,51,0);
+}
+
+li{
+    list-style: none;
+    display: inline-block;
+    padding: 0 10px 10px 10px;
+    margin: 0;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 0px 15px;
+}
+
+
+.nav-list a:hover{
+    color: whitesmoke;
     transition: 0.3s ease;
     cursor: pointer;
 }
 
-/* ***** main body ***** */
+.main-body {
+    color: rgb(192, 192, 191);
+}
 
-.main-body{
-    overflow: auto;
-    scroll-behavior: smooth;
-    width: 90vw;
-    display: flex;
-    flex-direction: column;
+h2, h3 {
+    font-family: Montserrat;
+    font-size: 18px;    
+}
+
+h2 {
+    
+    color: rgb(253,198,1);
+    font-size: 22px;
     text-align: center;
+    margin-bottom: 50px;
+    padding-top: 10px;
 }
 
-.main-body::-webkit-scrollbar { width: 0 !important }
-
-.main-child{
-    padding: 5px 15% 50px;
-    max-width: 100%;
-    color: black; 
-}
-
-.main-child h2{
-    font-family: 'Montserrat', sans-serif;
-    margin-bottom: 30px;
-    margin-top: 10px;
+h2 i {
+    font-size: 18px;
 }
 
 #bio,
-#contact{
-    background-color: rgb(122, 122, 122);
-    color: white;
+#projects{
+    background-color: rgb(30,30,30);
+}
+
+#bio, #skills, #projects {
+    padding-bottom: 150px;
 }
 
 /* ***** about me section ***** */
 
 #bio{
-    padding: 5px 21% 50px;
+    padding: 5px 21% 150px;
 }
 
 #bio p {
@@ -185,70 +190,74 @@ a{
 
 /* ***** skills section ***** */
 
-#skills{
-    background-color: white;
+
+
+.main-child{
+    padding: 5px 15% 50px;
+    max-width: 100%;
+    /* color: black;  */
 }
 
-.image-container{
-    max-width: 90%;
-    height: 80%;
-    margin: 10px auto 0;
-    border-radius: 3px;
+.skills-body {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
-.skill-img{
-    margin: 10px 15px 0;
+.skills-container {
+    text-align: center;
+    width: 50%;
+    padding: 25px 0px;
+}
+
+.skills-container h3 {
+    color: rgb(207,51,0);
 }
 
 /* ***** projects section ***** */
 
-#projects{
-    padding: 5px 0 15px;
+.my-projects {
+    text-align: center;
+    padding: 40px 0px;
 }
 
-.SAQ{
-    border-bottom: 1px solid rgb(182, 182, 182);
-}
-
-.my-projects{
-    width: 90%;
-    margin: auto;
-    padding: 20px 0;
-}
-
-.my-projects h3{
-    font-family: 'Montserrat', sans-serif;
+.my-projects h3 {
+    padding: 10px 0px;
 }
 
 .project-image{
     max-width: 100%;
     height: auto;
     width: auto\9;
-    border-radius: 3px
-}
-
-.my-projects p,
-.my-projects h3{
-    margin: 15px;
-}
-
-.my-projects a:hover{
-    background-color: rgb(146, 151, 126);
-    color: white;
     border-radius: 3px;
-    transition: 0.3s ease;
-    cursor: pointer;
+    
 }
 
-.project-links{
-    font-family: Calibri,Candara,Segoe,Segoe UI,Optima,Arial,sans-serif; 
-    font-size: 18px;
+.tech-label {
+    padding: 20px 0px;
 }
+
+.project-links {
+    color: rgb(207,51,0);
+    padding:2px;
+}
+
+.pl {
+    margin: 10px 0px;
+}
+
+.project-links:hover {
+    cursor: pointer;
+    border-top: 2px solid rgb(207,51,0);
+    border-bottom: 2px solid rgb(207,51,0);
+}
+
 
 /* ***** contacts section ***** */
 
 #contact{
     padding: 5px 5% 50px;
+    text-align: center;
 }
 
 .contact-item{
@@ -257,171 +266,58 @@ a{
     margin: 0 2px;
 }
 
+.contact-item i {
+    color: rgb(207,51,0);
+    padding: 3px 0px;
+}
+
+.contact-item i:hover {
+    cursor: pointer;
+    border-top: 2px solid rgb(207,51,0);
+    border-bottom: 2px solid rgb(207,51,0);
+    
+}
+
 .contacts p{
     font-family: Calibri,Candara,Segoe,Segoe UI,Optima,Arial,sans-serif; 
     font-size: 18px;
     color: white;
 }
 
-.contacts .fas,
-.contacts .fab{
-    color: white;
-}
-
-.contacts li:hover .fas ,
-.contacts li:hover .fab,
-.contacts li:hover{
-    color: rgb(146, 151, 126);
-    transition: 0.2s ease;
-    cursor: pointer;
-    background: rgb(238,238,238);
-}
-
-button{
-    border: none;
-    border-radius: 3px;
-    width: 90px;
-    padding: 3px;
-    background-color: rgb(168, 168, 168);
-}
-
-.contacts li{
-    border: none;
-    border-radius: 3px;
-    width: 90px;
-    padding: 3px;
-    background-color: rgb(168, 168, 168);
-}
-
-/* ***** footer ***** */
-
-footer{
-    color:rgb(146, 151, 126);
-    height: 25px;
-    width: 95%;
-    margin: 10px auto 20px;
-    border-radius: 5px 5px 0 0;
-}
-
-footer p{
-    font-weight: 700;
+footer {
+    text-align: center;
 }
 
 
+@media only screen and (min-width: 700px) {
 
-/* ***** media query ***** */
-
-@media screen and (max-width: 1300px){
-
-/* ***** header mq ***** */
-
-.name{
-    margin:  auto;
-    font-size: 60px;
-    font-family: 'Montserrat', sans-serif;
-}
-
-/* ***** main global mq ***** */
-
-.contents{
-    flex-direction: column;
-}
-
-/* ***** navigation mq ***** */
-
-.navigation{
-    display: static;
-    flex-direction: row;
-    justify-content: center;
-    width: 100vw;
-    border-bottom: 2px solid rgb(170,170,170);
-    border-right:0;
-    margin: 15px 0 0 0;
-    height: auto;
-}
-
-li{
-    list-style: none;
-    display: inline-block;
-    padding: 0 10px 10px 10px;
-    margin: 0;
-}
-
-/* ***** main body mq ***** */
-
-.main-body{
-    width: 100vw;
-    height: 95vh;
-}
-
-.main-child{
-    padding: 0 15% 50px;
-}
-
-/* ***** about me section mq ***** */
-
-#bio{
-    margin-top: 0px;
-    padding: 5px 15% 50px;
-}
-
-#bio p {
-    text-align: left;
-}
-
-.profile-pic{
-    margin-right: 0;
-    float: none;
-    margin-bottom: 20px;
-}
-
-/* ***** projects section mq ***** */
-
-.project-image{
-    float: none;
-}
-
-}
-
-/* ***** media query ***** */
-
-@media screen and (max-width: 800px){
-
-/* ***** header mq ***** */
-
-.hero{
-    height: auto;
-}
-
-/* ***** main global mq ***** */
-
-.contents{
-    height: 90vh;
-}
-
-
-/* ***** navigation mq ***** */
-
-li{
-    padding: 0 1px 10px 1px;
-    font-size: 14px;
-}
-
-
-}
-
-@media screen and (max-width: 550px){
-
-    /* ***** navigation mq ***** */
-    
-    li{
-        padding: 0 1px 10px 1px;
-        font-size: 12px;
+    .header-container {
+        background-image: url(images/hero-image-blacksmith2.jpeg);
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+        background-position: center center;
+        background-size: cover;
+        height: 90vh;
+        width: 100%;
+        display: block;
+        margin:0px;
+        postion: relative;
+        border-bottom: none;
     }
-    
-    /* ***** contacts mq ***** */
 
-    .contacts li{
-        width: 60px;
+
+    .name{
+        color: rgb(253,198,1);
+        font-size: 26px;
+        position: absolute;
+        right: 5%;
+        bottom: 15%;
+        font-family: Montserrat;
+        text-shadow: 0 0 10px rgb(207,51,0);
     }
+
+    .navigation{
+        display: flex;
     }
+
+}

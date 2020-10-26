@@ -13,16 +13,17 @@
 </head>
 
 <body>
-
-    <header class="hero">
-        <h1 class="name">SCHMIDT</h1>
-    </header>
-
-    <main class="contents">
+    <main class="contents"></main>
+    
+        <header class="hero">
+            <div class="header-container">
+            <h1 class="name">Forging Quality Through Creativity</h1>
+            </div>
+        </header>
 
         <aside class="navigation">
             <nav>
-                <ul class="nav">
+                <ul class="nav-list">
                     <li><a href="#bio"><i class="fas fa-user"></i> About me</a></li>
                     <li><a href="#skills"><i class="fas fa-laptop"></i> Skills</a></li>
                     <li><a href="#projects"><i class="fas fa-project-diagram"></i> Projects</a></li>
@@ -32,36 +33,71 @@
         </aside>
 
         <section class="main-body">
+
             <section id="bio" class="main-child">
-                <h2><i class="fas fa-user"></i> About Me</h2>
+                <h2>About Me</h2>
                 <img src="images/profile-me-small.png" class="profile-pic" alt="profile picture" />
-                <p>Hey there! I am Mitchell Schmidt.</p>
-                <p>I am a current student at Thinkful's Engineering Flex program. I get excited every day to test my
-                ability to find solutions to everyday coding challenges and advance my knowledge. I take pride in my precision and grit. Outside of coding, you will find me
-                reading & doing research, cooking and walking my dog with my wife, building a new project, or gardening. Programming is becoming a quickly growing passion in my life. I cannot wait to work on a team
-                and see what we can create!</p> 
+                <p>
+                    My name Mitchell Schmidt.
+                </p>
+                <p>
+                    I am a current student at Thinkful's Engineering Flex program. 
+                    I get excited every day to test my ability to find solutions to everyday coding challenges and advance my knowledge. 
+                    I take pride in my precision and grit. 
+                    Outside of coding, you will find me gardening. 
+                    There is something beautiful to cultivating the growth of plants and watching them flourish.
+                    Programming is becoming another passion that is quickly growing in my life. 
+                    I cannot wait to work on a team and see what we can create!
+                </p> 
             </section>
 
             <section id="skills" class="main-child">
-                <h2><i class="fas fa-laptop"></i> Skills</h2>
-                <section class="image-container">
-                    <img class="skill-img" src="images/html-logo.png" alt="HTML, CSS, JavaScript">
-                    <img class="skill-img" src="images/css-logo.png" alt="HTML, CSS, JavaScript">
-                    <img class="skill-img" src="images/js-logo.png" alt="HTML, CSS, JavaScript">
-                    <img class="skill-img jquery" src="images/jquery-logo.jpg" alt="jquery">
-                </section>
+                <h2>Professional Skills</h2>
+                <div class = "skills-body">
+                    <section class="skills-container">
+                        <h3>Programming Languages</h3>
+                        <p>HTML5, CSS3, JavaScript</p>
+                    </section>
+                    <section class="skills-container">
+                        <h3>Frontend Technologies</h3>
+                        <p>React, JQuery</p>
+                    </section>
+                    <section class="skills-container">
+                        <h3>Backend Technologies</h3>
+                        <p>Express.js, Node.js, RESTful API </p>
+                    </section>
+                    <section class="skills-container">
+                        <h3>Databases</h3>
+                        <p>PostgreSQL</p>
+                    </section>
+                    <section class="skills-container">
+                        <h3>Development Tools</h3>
+                        <p>Visual Studio Code, Git/Github</p>
+                    </section>
+                </div>
             </section>
 
             <section id="projects" class="main-child">
-                <h2><i class="fas fa-project-diagram"></i> Projects</h2>
+
+                <h2>Projects</h2>
+
                 <section class="my-projects SAQ">
                     <img class="project-image" src="images/stargate.png" alt="Stargate Atlantis Quiz">
                     <h3>Stargate: Atlantis quiz</h3>
                     <p>This app brings you through a quiz of ten questions, testing your knowledge of Stargate: Atlantis lore. 
                         Check it out and see how you do.</p>
-                    <p>Technologies used: <i class="fab fa-html5"></i> <i class="fab fa-css3-alt"></i> <i class="fab fa-js-square"></i> <img src="images/jq-icon.png" alt="jQuery"></p>
-                    <p>Live Link: <a class="project-links" href="https://phantom-wolf.github.io/quiz-app/" target="_blank">Demo</a></p>
-                    <p>Github Repository: <a class="project-links" href="https://github.com/Phantom-Wolf/quiz-app" target="_blank">Here</a></p>
+
+                    <p class="tech-label">Technologies used: </p>
+                    <ul class= "tech-list">
+                        <li><p>HTML5</p></li>
+                        <li><p>CSS3</p></li>
+                        <li><p>JavaScript</p></li>
+                        <li><p>JQuery</p></li>
+                        
+                    </ul>
+
+                    <p class = "pl"><a class="project-links" href="https://phantom-wolf.github.io/quiz-app/" target="_blank">Live Demo</a></p>
+                    <p class = "pl"><a class="project-links" href="https://github.com/Phantom-Wolf/quiz-app" target="_blank">Github Repo</a></p>
                 </section>
 
                 <section class="my-projects KTS">
@@ -72,14 +108,73 @@
                         instead of adding things that you want to see, you exclude what you don't want. 
                         This makes it perfect for seeing only the recipes that consider a groups 
                         varying dietary needs and preferences.</p>
-                    <p>Technologies used: <i class="fab fa-html5"></i> <i class="fab fa-css3-alt"></i> <i class="fab fa-js-square"></i> <img src="images/jq-icon.png" alt="jQuery"></p>
-                    <p>Live Link: <a class="project-links" href="https://phantom-wolf.github.io/RecipeCapstone/" target="_blank">Demo</a></p>
-                    <p>Github Repository: <a class="project-links" href="https://github.com/Phantom-Wolf/RecipeCapstone" target="_blank">Here</a></p>
+                        
+                    <p class="tech-label">Technologies used: </p>
+                    <ul class= "tech-list">
+                        <li><p>HTML5</p></li>
+                        <li><p>CSS3</p></li>
+                        <li><p>JavaScript</p></li>
+                        <li><p>JQuery</p></li>
+                       
+                    </ul>
+
+                    <p class = "pl"><a class="project-links" href="https://phantom-wolf.github.io/RecipeCapstone/" target="_blank">Live Demo</a></p>
+                    <p class = "pl"><a class="project-links" href="https://github.com/Phantom-Wolf/RecipeCapstone" target="_blank">Github Repo</a></p>
                 </section>
+
+                <section class="my-projects">
+                    <img class="project-image" src="images/ontrack-cap-img.png" alt="onTrack">
+                    <h3>onTrack</h3>
+                    <p>onTrack is a task tracking web application. It allows users to maintain all of their repeating everyday responisibilities.
+                        Tasks can be separated by weekdays, weeks of the month or months. Additionally, an end date can be added and any desired notes.</p>
+                    
+                    <p class="tech-label">Technologies used:</p>
+                    <ul class= "tech-list">
+                        <li><p>HTML5</p></li>
+                        <li><p>CSS3</p></li>
+                        <li><p>JavaScript</p></li>
+                        <li><p>React.js</p></li>
+                        <li><p>Node.js</p></li>
+                        <li><p>Express</p></li>
+                        <li><p>PostgreSQL</p></li>
+                        <li><p>Mocha</p></li>
+                        <li><p>Heroku</p></li>
+                    </ul>
+
+                    <p class = "pl"><a class="project-links" href="https://chore-tracker-capstone-client.vercel.app/Landing" target="_blank">Live Demo</a></p>
+                    <p class = "pl"><a class="project-links" href="https://github.com/Phantom-Wolf/chore-tracker-capstone-client" target="_blank">Github Client Repo</a></p>
+                    <p class = "pl"><a class="project-links" href="https://github.com/Phantom-Wolf/chore-tracker-capstone-server" target="_blank">Github Server Repo</a></p>
+                </section>
+
+                <section class="my-projects">
+                    <img class="project-image" src="images/project-manager-cap-img.png" alt="ProjeX">
+                    <h3>ProjeX</h3>
+                    <p> A complex project is less daunting and easier to manage when it can be broken
+                        down into smaller parts.You can do that and more with Projex, a straightforward web application
+                        that makes every project manageable.</p>
+                    
+                    <p class="tech-label">Technologies used:</p>
+                    <ul class= "tech-list">
+                        <li><p>HTML5</p></li>
+                        <li><p>CSS3</p></li>
+                        <li><p>JavaScript</p></li>
+                        <li><p>React.js</p></li>
+                        <li><p>Node.js</p></li>
+                        <li><p>Express</p></li>
+                        <li><p>PostgreSQL</p></li>
+                        <li><p>Mocha</p></li>
+                        <li><p>Heroku</p></li>
+                    </ul>
+
+                    <p class = "pl"><a class="project-links" href="https://project-manager-capstone-client.vercel.app/Landing" target="_blank">Live Demo</a></p>
+                    <p class = "pl"><a class="project-links" href="https://github.com/Phantom-Wolf/project-manager-capstone-client" target="_blank">Github Client Repo</a></p>
+                    <p class = "pl"><a class="project-links" href="https://github.com/Phantom-Wolf/project-manager-capstone-server" target="_blank">Github Server Repo</a></p>
+                </section>
+
             </section>
 
             <section id="contact" class="main-child">
-                <h2><i class="fas fa-address-card"></i> Contact</h2>
+                <h2>Contact</h2>
                 <ul class="contacts">
                     <li class="contact-item"><a href="mailto:MitchellT.S@outlook.com" target="_blank"><i class="fas fa-envelope fa-2x"></i></a></li>
                     <li class="contact-item"><a href="https://www.linkedin.com/in/mitchell-schmidt-328029185/" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a></li>
@@ -88,7 +183,7 @@
             </section>
 
             <footer>
-                <p>Mitchell Schmidt 2019</p>
+                <p>Mitchell Schmidt 2020</p>
             </footer>
 
         </section>
